@@ -1,0 +1,16 @@
+---
+# tasks file for ansible-grafana
+
+- name: install grafana repo | {{ inventory_hostname }}
+  yum: name=https://grafanarel.s3.amazonaws.com/builds/grafana-2.6.0-1.x86_64.rpm state=present
+  become: yes
+
+- name: install grafana | {{ inventory_hostname }}
+  yum: name=grafana state=present
+  become: yes
+
+- name: start and enable grafana-server | {{ inventory_hostname }}
+  service: name=grafana-server state=started enabled=yes
+  become: yes
+
+  

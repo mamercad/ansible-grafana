@@ -1,0 +1,4 @@
+---
+# vars file for ansible-grafana
+
+grafana_repo: https://grafanarel.s3.amazonaws.com/builds/grafana-2.6.0-1.x86_64.rpm
