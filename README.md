@@ -1,4 +1,4 @@
-mamercad.zabbix-agent
+mamercad.grafana
 =========
 
 Stands up Grafana 2 on RHEL/CentOS
